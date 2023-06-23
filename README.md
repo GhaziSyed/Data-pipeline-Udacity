@@ -17,16 +17,20 @@ The project has the following structure:
 ![Screenshot](FileStructure.png)
 <br>
 <br>
-<br>
 -final_project_sql_statements.sql: SQL create table statements provided with the template.
+<br>
 <br>
 -dags/final_project.py: Defines the main DAG, tasks, and links the tasks in the required order.
 <br>
+<br>
 -plugins/operators/stage_redshift.py: Defines the StageToRedshiftOperator to copy JSON data from S3 to staging tables in the Redshift via the copy command.
+<br>
 <br>
 -plugins/operators/load_dimension.py: Defines the LoadDimensionOperator to load a dimension table from staging table(s).
 <br>
+<br>
 -plugins/operators/load_fact.py: Defines the LoadFactOperator to load the fact table from staging table(s).
+<br>
 <br>
 -plugins/operators/data_quality.py: Defines the DataQualityOperator to run data quality checks on all tables passed as a parameter.
 <br>
