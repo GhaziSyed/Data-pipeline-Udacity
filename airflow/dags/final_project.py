@@ -20,7 +20,7 @@ default_args = {
     'email_on_retry': False
 }
 
-# Instantiate a DAG object using Airflow 1 code style
+# Instantiate the DAG object using Airflow-1 code style
 @dag(
     default_args=default_args,
     description='Load and transform data in Redshift with Airflow',
