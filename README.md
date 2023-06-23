@@ -14,15 +14,7 @@ Log data: s3://udacity-dend/log_data Song data: s3://udacity-dend/song_data
 
 The project has the following structure:
 
-├── final_project_sql_statements.sql
-├── dags
-│   └── final_project.py
-└── plugins
-    └── operators
-        ├── stage_redshift.py
-        ├── load_dimension.py
-        ├── load_fact.py
-        └── data_quality.py
+![Screenshot](FileStructure.png)
 
 -final_project_sql_statements.sql: SQL create table statements provided with the template.
 -dags/final_project.py: Defines the main DAG, tasks, and links the tasks in the required order.
