@@ -16,6 +16,8 @@ The project has the following structure:
 
 ![Screenshot](FileStructure.png)
 <br>
+<br>
+<br>
 -final_project_sql_statements.sql: SQL create table statements provided with the template.
 <br>
 -dags/final_project.py: Defines the main DAG, tasks, and links the tasks in the required order.
